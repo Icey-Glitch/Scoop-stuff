@@ -27,13 +27,14 @@
     ],
     "persist": "portable_config",
     "checkver": {
-        "url": "https://sourceforge.net/projects/mpv-player-windows/rss?path=/64bit-v3",
+        "github": "https://github.com/zhongfly/mpv-winbuild",
+        "jsonpath": "$..browser_download_url",
         "regex": "mpv-x86_64-v3-(\\d+)-git-(?<commit>[\\da-f]+)\\.7z"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://downloads.sourceforge.net/project/mpv-player-windows/64bit-v3/mpv-x86_64-v3-$version-git-$matchCommit.7z"
+                "url": "https://github.com/zhongfly/mpv-winbuild/releases/download/$version/mpv-x86_64-v3-$version-git-$matchCommit.7z"
             }
         }
     }
