@@ -18,11 +18,14 @@
     },
     "pre_install": "Remove-Item \"$dir\\updater.bat\"",
     "env_add_path": ".",
-    "bin": "mpv.com",
+    "bin": [
+        "mpv.com",
+        "mpv-v3.com"
+    ],
     "shortcuts": [
         [
             "mpv.exe",
-            "mpv"
+            "mpv-v3"
         ]
     ],
     "persist": "portable_config",
