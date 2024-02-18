@@ -1,5 +1,5 @@
 {
-    "version": "20240216",
+    "version": "2024-02-18-3fd840f",
     "description": "Video player based on MPlayer/mplayer2 (builds by shinchiro)",
     "homepage": "https://mpv.io",
     "license": "LGPL-2.1-or-later,GPL-2.0-or-later",
@@ -12,8 +12,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/zhongfly/mpv-winbuild/releases/download/2024-02-16-c0c32b2/mpv-x86_64-v3-20240216-git-c0c32b2.7z",
-            "hash": "9c91e1ae9b877e45b3f4882a7ac384b5612ec73108583cfa92824266480117d4"
+            "url": "https://github.com/zhongfly/mpv-winbuild/releases/download/2024-02-18-3fd840f/mpv-x86_64-v3-20240218-git-3fd840f.7z",
+            "hash": "b3e9bb6719ef1c5d34241f8a558acc595e8720262d4397bd12323e1d6a6a27a3"
         }
     },
     "pre_install": "Remove-Item \"$dir\\updater.bat\"",
@@ -33,13 +33,12 @@
     "persist": "portable_config",
     "checkver": {
         "github": "https://github.com/zhongfly/mpv-winbuild",
-        "jsonpath": "$.assets[11]..browser_download_url",
-        "regex": "download\\/(?<dash>(?:\\d{4}-(?:0[1-9]|1[0-2])-(?:0[1-9]|[12]\\d|3[01])))-(?<commit>\\w+)\\/mpv-x86_64-v3-(?<version>\\d+)-git-\\k<commit>\\.7z"
+        "regex": "download\\/(?<version>(?<dash>(?:\\d{4}-(?:0[1-9]|1[0-2])-(?:0[1-9]|[12]\\d|3[01])))-(?<commit>\\w+))\\/mpv-x86_64-v3-(?<cleanversion>\\d+)-git-\\k<commit>\\.7z"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/zhongfly/mpv-winbuild/releases/download/$matchDash-$matchCommit/mpv-x86_64-v3-$version-git-$matchCommit.7z",
+                "url": "https://github.com/zhongfly/mpv-winbuild/releases/download/$matchDash-$matchCommit/mpv-x86_64-v3-$matchCleanversion-git-$matchCommit.7z",
                 "hash": {
                     "url": "https://github.com/zhongfly/mpv-winbuild/releases/download/$matchDash-$matchCommit/sha256.txt",
                     "regex": "^(?<sha256>[a-f0-9]{64})\\s+\\S*mpv-x86_64-v3-(?<version>\\d+)-git-(?<commit>[a-f0-9]+)\\.7z\\s*\\d*"
