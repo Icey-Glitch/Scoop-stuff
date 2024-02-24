@@ -13,7 +13,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/zhongfly/mpv-winbuild/releases/download/2024-02-24-2cc3bc1/mpv-x86_64-v3-20240224-git-2cc3bc1.7z",
-            "hash": "35d56d4aeac89200384b1b630539d92b0574cc7c453ff9168529e6a1d20fe2ae"
+            "hash": "160d7d14420cfe749d9a63fcfde89512990f4701edc99c5e614ae8eb615b25f6"
         }
     },
     "pre_install": "Remove-Item \"$dir\\updater.bat\"",
