@@ -1,5 +1,5 @@
 {
-    "version": "2024-07-12-d15660f",
+    "version": "2024-07-13-d15660f",
     "description": "Video player based on MPlayer/mplayer2 (builds by shinchiro)",
     "homepage": "https://mpv.io",
     "license": "LGPL-2.1-or-later,GPL-2.0-or-later",
@@ -12,8 +12,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/zhongfly/mpv-winbuild/releases/download/2024-07-12-d15660f/mpv-x86_64-v3-20240712-git-d15660f.7z",
-            "hash": "1ae2aff1503dcd0b6b17c3251917b6a04aaf0760d4895c6a06075f65bdc9ae88"
+            "url": "https://github.com/zhongfly/mpv-winbuild/releases/download/2024-07-13-d15660f/mpv-x86_64-v3-20240713-git-d15660f.7z",
+            "hash": "ca655192e4667d46446873094277bb8383a7068a6159829813d7143e80deb3b6"
         }
     },
     "pre_install": "Remove-Item \"$dir\\updater.bat\"",
