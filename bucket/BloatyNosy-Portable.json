@@ -1,11 +1,11 @@
 {
-    "version": "1.0.20.522",
+    "version": "1.0.0",
     "homepage": "https://www.builtbybel.com/blog/about-bloatynosy",
     "description": "BloatyNosy. Universal Debloater and PC Manager for the most up-to-date version of the Redmond OS (Windows 11)",
     "license": "MIT",
     "changelog": "https://github.com/builtbybel/BloatyNosy/releases",
-    "url": "https://ghproxy.com/https://github.com/builtbybel/BloatyNosy/releases/download/1.0.20.522/BloatyNosyApp.zip",
-    "hash": "e202fcfbb5d46d6ceb3e36c24c4e37f3235663cd3d880fe35ba2c30da243b958",
+    "url": "https://ghproxy.com/https://github.com/builtbybel/BloatyNosy/releases/download/1.0.0/BloatyNosyApp.zip",
+    "hash": "94176d686473f905c7e64a2ef0a5a52e7194e02b7b8442b4ba7c941f10d589db",
     "shortcuts": [
         [
             "BloatyNosy.exe",
